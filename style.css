@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background: darkgray;
+}
+
+footer {
+    background: gray;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;  }
+
+#photoGallery {
+    text-align: center;
+    display: grid;
+    grid-auto-rows: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-gap: 10px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.pictureMasonry {
+    width: 100%;
+}
+
+.detailsMasonry {
+    transform: translateY(-1.4em);
+}
+
+.itemMasonry {
+    background: red;
+}
+
+.itemMasonry:hover {
+    transition: transform 0.5s;
+    transform: scale(1.03);
+    z-index: 300;
+    box-shadow: 3px 3px;
+}
+
+p {
+    margin-top: -20px;
+}
